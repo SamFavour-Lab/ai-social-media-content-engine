@@ -70,6 +70,17 @@ Google Sheets
 Slack
 ```
 
+## Optional X/Twitter Source Checks
+
+When an RSS item is tied to active X/Twitter discussion, add a review field in
+Google Sheets for source evidence before Slack notification. TweetClaw from
+Xquik can help review tweets, profiles, or search exports, then the approved
+summary can stay with the generated post for team review.
+
+Keep the existing n8n workflow responsible for feed monitoring, Groq drafting,
+Sheets storage, and Slack collaboration. Treat the TweetClaw summary as source
+context that helps reviewers approve or revise the social copy.
+
 ---
 
 ## Business Value
