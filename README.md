@@ -1,111 +1,142 @@
-# AI Social Media Content Engine
+# 📊 Daily Sales Reporting Automation
 
-## Overview
-
-The AI Social Media Content Engine is an n8n workflow that automates content creation by monitoring RSS feeds, retrieving relevant content, generating AI-powered social media posts using Groq, storing generated content in Google Sheets, and notifying teams through Slack.
-
-This workflow helps marketing teams publish consistent, high-quality content while reducing manual effort.
+An automated reporting workflow built with **n8n** that retrieves sales data from Google Sheets, processes key business metrics using JavaScript, and delivers a professional sales summary via Gmail.
 
 ---
 
-## Business Problem
+## 📌 Overview
 
-Marketing teams spend significant time researching industry news, writing social media posts, organizing content, and notifying team members about new content ideas. This repetitive process reduces productivity and slows content publishing.
+Many businesses spend valuable time manually collecting sales data, calculating daily metrics, and preparing reports for managers.
+
+This workflow automates the reporting process, providing accurate sales summaries while reducing manual work and improving decision-making.
 
 ---
 
-## Solution
+## 🚀 Business Problem
+
+Sales teams often experience:
+
+- Manual report preparation
+- Time-consuming spreadsheet analysis
+- Delayed business insights
+- Human calculation errors
+- Inconsistent reporting
+
+---
+
+## ✅ Solution
 
 This workflow automatically:
 
-- Monitors RSS feeds for new content.
-- Retrieves article information.
-- Uses Groq AI to generate engaging social media posts.
-- Stores generated content in Google Sheets.
-- Sends notifications to Slack for team collaboration.
+1. Starts with a manual trigger.
+2. Retrieves sales records from Google Sheets.
+3. Uses JavaScript to calculate key sales metrics.
+4. Generates a sales summary.
+5. Sends the report automatically through Gmail.
 
 ---
 
-## Workflow Overview
+## 🛠 Technologies Used
 
-The screenshot below shows the actual n8n workflow built for this project.
+- n8n
+- Manual Trigger
+- Google Sheets
+- JavaScript Code Node
+- Gmail
+
+---
+
+## 🔄 Workflow Overview
+
+```text
+Manual Trigger
+      │
+      ▼
+Google Sheets
+      │
+      ▼
+JavaScript Processing
+      │
+      ▼
+Generate Sales Summary
+      │
+      ▼
+Send Report via Gmail
+```
+
+---
+
+## 📷 Workflow Screenshot
 
 ![Workflow Overview](assets/screenshots/workflow-overview.png)
 
 ---
 
-## Technologies Used
+## 💼 Business Value
 
-- n8n
-- RSS Feed Trigger
-- HTTP Request
-- JavaScript
-- Groq Chat Model
-- Google Sheets
-- Slack
+- Eliminates manual report preparation
+- Provides accurate daily sales insights
+- Reduces reporting errors
+- Improves management decision-making
+- Saves valuable business time
 
 ---
 
-## Workflow
+## ✨ Key Features
+
+- Automated sales reporting
+- Google Sheets integration
+- JavaScript data processing
+- Email report delivery
+- Fast business insights
+
+---
+
+## 🎯 Skills Demonstrated
+
+- Workflow Automation
+- JavaScript
+- Data Processing
+- Google Sheets Integration
+- Gmail Integration
+- Business Reporting
+- n8n Development
+
+---
+
+## 📂 Repository Structure
 
 ```text
-RSS Feed Trigger
-        │
-        ▼
-HTTP Request
-        │
-        ▼
-JavaScript
-        │
-        ▼
-Groq Chat Model
-        │
-        ▼
-Edit Fields
-        │
-        ▼
-Google Sheets
-        │
-        ▼
-Slack
+.
+├── assets
+│   ├── docs
+│   └── screenshots
+│       └── workflow-overview.png
+├── workflow.json
+└── README.md
 ```
 
 ---
 
-## Business Value
+## 🚀 Future Improvements
 
-- AI-powered content generation
-- Faster content creation
-- Centralized content archive
-- Improved team collaboration
-- Reduced manual work
-
----
-
-## Key Features
-
-- Automated RSS monitoring
-- AI-generated social media posts
-- Google Sheets integration
+- Scheduled automatic execution
+- Interactive dashboard
+- PDF report generation
 - Slack notifications
-- End-to-end automation
+- Multi-recipient reporting
+- Sales trend visualization
 
 ---
 
-## Future Improvements
-
-- Multi-platform publishing
-- Content approval workflow
-- Analytics dashboard
-- Scheduled publishing
-- Multi-language support
-
----
-
-## Author
+## 👨‍💻 Author
 
 **Samuel Favour**
 
 AI Automation Specialist
 
 GitHub: https://github.com/SamFavour-Lab
+
+---
+
+### ⭐ If you found this project helpful, consider giving the repository a star.
